@@ -3,9 +3,9 @@ def lonelyinteger(a):
     a.sort()
     l=len(a)
     if l==1:
-        return 1
+        return a[0]
     else:
         for i in range(0,l-1,2):
             if a[i]!=a[i+1]:
                 return a[i]
-            return a[-1]
+        return a[-1]
